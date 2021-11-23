@@ -1,0 +1,22 @@
+.card-img-top{
+	--w : 200px;
+	width: var(--w);
+	height: var(--w);
+
+	border-radius: 50%
+}
+
+.bg-img{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.on-mouse-color{
+	filter: grayscale(1) !important;
+	filter: opacity(75%);
+}
+.on-mouse-color:hover{
+	filter: grayscale(0) !important;
+	filter: opacity(1);
+}
