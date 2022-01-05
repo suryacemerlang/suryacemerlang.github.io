@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<title>Regna Bootstrap Template</title>
+		<meta content="" name="description">
+		<meta content="" name="keywords">
+		<!-- Favicons -->
+		<link href="assets/img/favicon.png" rel="icon">
+		<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+		
+		<!-- Vue assets -->
+		<!-- development version, includes helpful console warnings -->
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+		<!-- Vendor CSS Files -->
+		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+		<link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+		<link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+		<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+		<!-- Template Main CSS File -->
+		<link href="assets/css/style.css" rel="stylesheet">
+		<link href="assets/css/css.css" rel="stylesheet" type="text/css" />
+		<!-- w3school css style -->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+				.mySlides {display:none;}
+		</style>
+		<!-- jquery -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<!-- =======================================================
+		* Template Name: Regna - v2.2.1
+		* Template URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+		* Author: BootstrapMade.com
+		* License: https://bootstrapmade.com/license/
+		======================================================== -->
+	</head>
+	<body>
+		<!-- ======= Header ======= -->
+		<header id="header" class="header-transparent">
+			<div class="container">
+				<div id="logo" class="pull-left">
+					<a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+					<!-- Uncomment below if you prefer to use a text logo -->
+					<!--<h1><a href="#hero">Regna</a></h1>-->
+				</div>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li class="menu-active"><a href="index.html">Home</a></li>
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+					</ul>
+					</nav><!-- #nav-menu-container -->
+				</div>
+				</header><!-- End Header -->
+				<svg class="" id="header-path" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="top: 0px; position: fixed; right: 0;z-index: 2;">
+				<path fill="rgba(52, 59, 64)" fill-opacity="0.9" d="M0,128L120,106.7C240,85,480,43,720,26.7C960,11,1200,21,1320,26.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+			<path fill="rgba(52, 59, 64)" fill-opacity="0.75" d="M0,128L1440,64L1440,0L0,0Z"></path>
+		</svg>
+		<div id="app-profile">
+			<!-- ======= Hero Section ======= -->
+			<section id="hero">
+				<div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+					<h1>BEING INNOVATIVE WITH NATURE</h1>
+					<h2>We Safely Delivering Sustainable Solutions</h2>
+					<!-- /*/*<h3 class="badge-light p-1" style="font-family:customF; font-size: 28px;">Welcome to Surya Cemerlang Official Website</h3>*/*/ -->
+					<a href="#about" class="btn-get-started">Get Started</a>
+				</div>
+				<div style="position: absolute; width: 100vw; bottom:0px; right:0px">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
+						  <path fill="#ffffff" fill-opacity="0.8" d="M0,96L120,80C240,64,480,32,720,16C960,0,1200,0,1320,0L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+						  <path fill="#ffffff" fill-opacity="0.6" d="M0,0L80,26.7C160,53,320,107,480,117.3C640,128,800,96,960,80C1120,64,1280,64,1360,64L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+						  <path fill="#ffffff" fill-opacity="0.8" d="M0,96L1440,32L1440,320L0,320Z"></path>
+
+
+
+						</svg>
+					</div>
+				<script>
+							//Array of images which you want to show: Use path you want.
+							var images=new Array(
+								'assets/img/hero-bg.jpg',
+								'assets/img/hero-bg_2.jpg',
+								'assets/img/hero-bg_3.jpg'
+								);
+							var nextimage=0;
+							doSlideshow();
+							function doSlideshow(){
+							if(nextimage>=images.length){nextimage=0;}
+							$('#hero')
+							.css('background-image','url("'+images[nextimage++]+'")')
+							.css('position','relative')
+							.show("slow",function(){
+								setTimeout(doSlideshow,10000);
+							});
+							}
+				</script>
+				<!-- w3school slider -->
+			</section><!-- End Hero Section -->
+			<main id="main">
+				<!-- ======= Posts newsletter Section ======= -->
+				<section id="Newsletter" style="min-height: 200px">
+					<div class="container" data-aos="fade-up">
+						<div class="section-header">
+							<h3 class="section-title">OUR ACTIVITY</h3>
+							<!-- <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
+						</div>
+						<div class="">
+							<div class="col-md-3">
+								<div class="text-center" style="font-size: 72px; color: #666666;"><i class="fa fa-newspaper-o"></i></div>
+							</div>
+						<post-activity class="row"></post-activity>
+					</div>
+				</div>
+				</section><!-- End Posts newsletter Section -->
+				<!-- ======= About Section ======= -->
+				<section id="about">
+					<div class="container" data-aos="fade-up">
+						<div class="row about-container">
+							<div class="col-lg-6 content order-lg-1 order-2">
+								<h2 class="title mt-4">Sedikit Tentang Kami</h2>
+								<p>
+									Kami adalah perusahaan kecil menegah yang bergerak dalam bidang jasa konsultasi lingkungan. Berdiri sejak <strong class="y-founded"></strong>, setidaknya genap sudah <strong class="y-experienced"></strong> pengalaman kami dalam jasa konsultasi. Menjalankan fungsi perencanaan dan pemantauan, kami terus belajar dan berinovasi demi terwujutnya visi lingkungan hidup yang sehat.
+								</p>
+								<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+									<div class="icon"><i class="fa fa-institution"></i></div>
+									<h4 class="title"><a href="">Legal & Badan Hukum</a></h4>
+									<p class="description">Dokumen perusahaan, dokumen resmi pendukung termasuk didalamnya Company Profile ...</p>
+								</div>
+								<div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+									<div class="icon"><i class="fa fa-photo"></i></div>
+									<h4 class="title"><a href="">Galeri & Dokumentasi</a></h4>
+									<p class="description">Foto dokumentasi proyek, meeting, kegiatan kantor lainnya ...</p>
+								</div>
+								<div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+									<div class="icon"><i class="fa fa-pencil-square-o"></i></div>
+									<h4 class="title"><a href="">Publikasi</a></h4>
+									<p class="description">Softcopy handout meeting, hasil publikasi, bahan presentasi, ...</p>
+								</div>
+							</div>
+							<div class="col-lg-6 background order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100"></div>
+						</div>
+					</div>
+				</section><!-- End About Section -->
+				<!-- ======= Facts Section ======= -->
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 96">
+				  <path fill="#c0ffbe" fill-opacity="1" d="M0,96L1440,0L1440,96L0,96Z"></path>
+
+				  <text x="600" y="140" fill="#37D667" class="fa" transform="rotate(-3)" style="font-size:8em;">&#xf18c;</text>
+					<text x="1200" y="130" fill="#37D667" class="fa" transform="rotate(-3)" style="font-size:8em;">+</text>
+					<text x="1000" y="100" fill="#fff" class="fa" transform="rotate(-5,30)" style="font-size:6em;">+</text>
+					<text x="1100" y="100" fill="#9BEAB3" class="fa" transform="rotate(-5,30)" style="font-size:5em;">+</text>
+					<text x="1300" y="80" fill="#9BEAB3" class="fa" transform="rotate(-6,30)" style="font-size:4em;">&#xf03e;</text>
+					<text x="1100" y="100" fill="#fff" class="fa" rotate="-15" style="font-size:7em;">+</text>
+				</svg>
+				<section id="facts">
+					<div class="container" data-aos="fade-up">
+						<div class="section-header">
+							<h3 class="section-title">What We Have Done</h3>
+							<p class="section-description">Selama <strong class="y-experienced"></strong> mengabdi, berikut ringkas perjalanan kami:</p>
+						</div>
+						<div class="row counters">
+							<div class="col-lg-3 col-6 text-center">
+								<span data-toggle="counter-up">232</span>
+								<p>Clients</p>
+							</div>
+							<div class="col-lg-3 col-6 text-center">
+								<span data-toggle="counter-up">521</span>
+								<p>Projects</p>
+							</div>
+							<div class="col-lg-3 col-6 text-center">
+								<span data-toggle="counter-up">1,463</span>
+								<p>Hours Of Support</p>
+							</div>
+							<div class="col-lg-3 col-6 text-center">
+								<span data-toggle="counter-up">315</span>
+								<p>Repports</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 128">
+				  <path fill="#c0ffbe" fill-opacity="1" d="M0,128L1440,64L1440,0L0,0Z"></path>
+
+				  <text x="110" y="120" fill="#37D667" class="fa" transform="rotate(-3)" style="font-size:6em;">&#xf15c;</text>
+				  <text x="230" y="70" fill="#37D667" class="fa" transform="rotate(8)" style="font-size:4em;">&#xf1c1;</text>
+				  <text x="50" y="140" fill="#fff" class="fa" transform="rotate(-5)" style="font-size:8em;">#;</text>
+
+				</svg>
+				<!-- End Facts Section -->
+				<!-- ======= Services Section ======= -->
+				<section id="services">
+					<div class="container" data-aos="fade-up">
+						<div class="section-header">
+							<h3 class="section-title">SERVICES</h3>
+							<p class="section-description">Kami bergerak di bidang jasa konsultasi, berikut adalah beberapa jasa yang kami tawarkan:</p>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 col-md-6" data-aos="zoom-in">
+								<div class="box">
+									<div class="icon"><a href=""><i class="fa fa-pagelines"></i></a></div>
+									<h4 class="title"><a href="">Konsultasi Lingkungan</a></h4>
+									<p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6" data-aos="zoom-in">
+								<div class="box">
+									<div class="icon"><a href=""><i class="fa fa-file-text-o"></i></a></div>
+									<h4 class="title"><a href="">Dokumen AMDAL</a></h4>
+									<p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6" data-aos="zoom-in">
+								<div class="box">
+									<div class="icon"><a href=""><i class="fa fa-flask"></i></a></div>
+									<h4 class="title"><a href="">Pemantauan Lingkungan</a></h4>
+									<p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section><!-- End Services Section -->
+				<!-- ======= Call To Action Section ======= -->
+				<section id="call-to-action">
+					<div class="container">
+						<div class="row" data-aos="zoom-in">
+							<div class="col-lg-9 text-center text-lg-left">
+								<h3 class="cta-title">Call To Action</h3>
+								<p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div class="col-lg-3 cta-btn-container text-center">
+								<a class="cta-btn align-middle" href="#">Call To Action</a>
+							</div>
+						</div>
+					</div>
+				</section><!-- End Call To Action Section -->
+								
+				<!-- ======= Affiliated Section ======= -->
+				<section id="Affiliated" class="bg-dark">
+					<div class="container" data-aos="fade-up">
+						<cs-carousel
+						title="Affiliated"
+						description="Untuk menunjang kinerja, kami berafiliasi dengan beberapa instansi dan perusahaan berikut"
+						dataclass="dataClient"
+						m="getAffiliates"
+						/>
+					</div>
+				</section><!-- End Affiliated Section -->
+				<!-- ======= Client Section ======= -->
+				<section id="Client" class="bg-dark">
+					<div class="container" data-aos="fade-up">
+						<cs-carousel
+						title="Our Client"
+						description="Beberapa instansi dan perusahaan yang puas atas kinerja kami"
+						dataclass="dataClient"
+						m="getClients"
+						/>
+					</div>
+				</section>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 192">
+				  <path fill="#343A40" fill-opacity="1" d="M0,32L720,160L1440,0L1440,0L720,0L0,0Z"></path>
+				</svg>
+				<!-- End Client Section -->
+				<!-- ======= Team Section ======= -->
+				<section id="team">
+					<div class="container" data-aos="fade-up">
+						<sc-profile/>
+					</div>
+				</section><!-- End Team Section -->
+				<!-- ======= Contact Section ======= -->
+				<section id="contact" class="pb-0">
+					<div class="container">
+						<div class="section-header">
+							<h3 class="section-title">Contact</h3>
+							<p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+						</div>
+					</div>
+					<!-- Uncomment below if you wan to use dynamic maps -->
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6653.397098475638!2d112.68386229421344!3d-7.450469986169888!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e10123322055%3A0x3fb58254a0c2490!2sSurya%20Cemerlang.%20CV!5e0!3m2!1sen!2sid!4v1623132889972!5m2!1sen!2sid" width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					<div id="footer" class="p-0">
+						<wave></wave>
+						<div
+							class="container-fluid text-light"
+							style="background: #32C15D; min-height: 150px"
+							>
+							<div class="container" id="footer-info">
+								<div class="row">
+									<div class="col-lg-4 p-2" id="contact">
+										<footer-info></footer-info>
+										<footer-component></footer-component>
+										</div>
+										<div class="col-lg-4 p-2"></div>
+										<div class="col-lg-4 p-2"></div>
+									</div>
+								</div>
+							</div>
+							<cp-right></cp-right>
+								
+							</div>
+				</section><!-- End Contact Section -->
+			</main><!-- End #main -->
+			<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+		</div>
+		<!-- Vendor JS Files -->
+		<script src="assets/vendor/jquery/jquery.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="assets/vendor/php-email-form/validate.js"></script>
+		<script src="assets/vendor/counterup/counterup.min.js"></script>
+		<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+		<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+		<script src="assets/vendor/superfish/superfish.min.js"></script>
+		<script src="assets/vendor/hoverIntent/hoverIntent.js"></script>
+		<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="assets/vendor/venobox/venobox.min.js"></script>
+		<script src="assets/vendor/aos/aos.js"></script>
+		<!-- Template Main JS File -->
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/app.js"></script>
+		<script>
+			var vu = new Vue({
+			el: '#app-profile',
+			data: {
+			message: 'Hello Vue!'
+			}
+				})
+		</script>
+		<script type="text/javascript">
+			var year_founded = 2013;
+			var cur_year = new Date().getFullYear();
+			var experienced = cur_year - year_founded;
+			$(".y-founded")[0].innerHTML = year_founded;
+			$(".y-experienced").each( (i,e) => e.innerHTML = experienced+"thn");
+		</script>
+	</body>
+</html>

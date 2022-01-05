@@ -4,40 +4,21 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-var articles = $('article');
-
-// Find next
-function findnext(){
-    var scrollPosition = $(window).scrollTop();
-    articles.each(function() {
-        var that = $(this);
-        artPosition = that.offset().top;
-        if (artPosition > scrollPosition + 10) {
-            target = that;
-            $.scrollTo(target, 400, {axis:'y', easing:'easeInOutQuart'});
-            return false;
-        }
-    });
-}
-
 !(function($) {
   "use strict";
-  findnext();
+
   // Header fixed and Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
       $('#header').addClass('header-fixed');
-      $('#header-path').addClass('path-fixed');
     } else {
       $('.back-to-top').fadeOut('slow');
       $('#header').removeClass('header-fixed');
-      $('#header-path').removeClass('path-fixed');
     }
   });
 
   $('.back-to-top').click(function() {
-    console.log("clicked")
     $('html, body').animate({
       scrollTop: 0
     }, 1500, 'easeInOutExpo');

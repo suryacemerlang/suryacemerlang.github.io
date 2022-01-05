@@ -28,7 +28,7 @@ Vue.component('list-category', {
 	},
 	template:`
 		<div class="col-md-3">
-			<h2 style="text-decoration:underline; color:#2557e6">{{ category }}</h2>
+			<h2 style="text-decoration:underline">{{ category }}</h2>
 			<span v-if="!seen" style="font-size:11px">no post yet</span>
 			<list-post v-if="seen" v-for="entry in entries" 
 				:key="entry.id"
@@ -188,7 +188,7 @@ Vue.component("cs-carousel", {
 	},
 	template:`
 		<div class="container section-header align-items-center text-center mb-2">
-			<h3 class="section-title text-light">{{title}}</h3>
+			<h3 class="section-title">{{title}}</h3>
       <span
 				v-if="description" 
 				class="section-description"
@@ -209,7 +209,7 @@ Vue.component("cs-carousel", {
 					:style="{
 						width: width,
 						height: width,
-						backgroundImage: 'Url('+(item.image? item.image : 'assets/img/sc-profile/file-no-photo.png')+')'
+						backgroundImage: 'Url('+(item.image? item.image : '/assets/img/sc-profile/file-no-photo.png')+')'
 					}"
 					></div>
 				</div>
@@ -308,8 +308,7 @@ Vue.component("sc-profile", {
 					<div class="card-img-top bg-img"
 						:style="{
 							backgroundColor: 'var(--bs-gray-200)',
-							filter:'brightness(1.2) contrast(1.5)',
-							backgroundImage: 'Url('+(member.profile? member.profile : member.gender>0?'assets/img/sc-profile/profile-no-photo.png' : 'assets/img/sc-profile/profile-no-photo2.png')+')',
+							backgroundImage: 'Url('+(member.profile? member.profile : member.gender>0?'/assets/img/sc-profile/profile-no-photo.png' : '/assets/img/sc-profile/profile-no-photo2.png')+')',
 						}
 						"
 					>
@@ -331,108 +330,3 @@ Vue.component("sc-profile", {
 			.then(data => this.members = data);
 	}
 })
-
-
-// foooter
-// 
-// wave component
-Vue.component("wave", {
-	data: function(){
-		return {}
-	},
-	template:`
-		<svg 
-			xmlns="http://www.w3.org/2000/svg" 
-			viewBox="0 120 1440 200"
-		>
-
-			<path fill="#000" fill-opacity="1" d="M0,256L60,256C120,256,240,256,360,250.7C480,245,600,235,720,234.7C840,235,960,245,1080,261.3C1200,277,1320,299,1380,309.3L1440,320L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-			<path fill="#37D667" fill-opacity="0.5" d="M0,224L60,234.7C120,245,240,267,360,266.7C480,267,600,245,720,229.3C840,213,960,203,1080,202.7C1200,203,1320,213,1380,218.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-			<path fill="#37D667" fill-opacity="0.8" d="M0,128L60,128C120,128,240,128,360,144C480,160,600,192,720,213.3C840,235,960,245,1080,256C1200,267,1320,277,1380,282.7L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-			
-			<text x="900" y="270" fill="#37D667" class="fa" transform="rotate(-3)" style="font-size:80px;">&#xf06c;</text>
-			<text x="1200" y="270" fill="#37D667" class="fa" transform="rotate(-3)" style="font-size:80px;">+</text>
-			<text x="1000" y="300" fill="#fff" class="fa" transform="rotate(-5,30)" style="font-size:42px;">+</text>
-			<text x="1100" y="200" fill="#9BEAB3" class="fa" transform="rotate(-5,30)" style="font-size:42px;">+</text>
-			<text x="1300" y="220" fill="#9BEAB3" class="fa" transform="rotate(-5,30)" style="font-size:66px;">&#xf18c;</text>
-			<text x="1100" y="280" fill="#fff" class="fa" rotate="-15" style="font-size:72px;">+</text>
-
-
-			<image href="assets/img/logo.png" x="50" y="150" alt="CV. Surya Cemerlang" style="filter: brightness(10)"/>
-
-		</svg>
-	`
-})
-
-// right component
-Vue.component("cp-right", {
-	template:`
-		<div 
-			class="bg-dark text-light text-center" 
-			style="font-size: 11px; min-height: 150px"
-			id="cp-right"
-		>
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 96">
-			<path fill="#32C15D" fill-opacity="1" d="M0,0L1440,96L1440,0L0,0Z"></path>
-		</svg>
-			<div class="copyright mt-2">
-				© Copyright <strong>CV.Surya Cemerlang</strong>. All Rights Reserved
-	    </div> 
-			<div class="credits">
-				Powered by <strong>GB-Sources</strong>, Design with ♥ and <a href="https://bootstrapmade.com/">bootstrapmade</a>
-			</div>
-		</div>
-	`
-});
-
-// info component
-Vue.component("footer-info", {
-	template:`
-		<div class="info">
-			<h3>contacts</h3>
-			<div>
-				<i class="fa fa-map-marker"></i> <p>Perumahan Puri Indah CC 8, Suko, Kec.Sidoarjo Kab.Sidoarjo<br>Jawa Timur Kode-Pos.61224</p>
-			</div> 
-			<div>
-				<i class="fa fa-envelope"></i> <p>info@example.com</p>
-			</div> 
-			<div>
-				<i class="fa fa-phone"></i> <p>+1 5589 55488 55s</p>
-			</div>
-		</div>
-	`
-})
-
-// social component
-Vue.component("footer-component", {
-	data: function(){
-		return {
-			links:{
-				twitter: "#",
-				facebook: "#",
-				instagram: "#",
-				google: "#",
-				linkedin: "#"
-			},
-			icons : {
-				twitter:"fa fa-twitter",
-				facebook: "fa fa-facebook",
-				instagram: "fa fa-instagram",
-				google: "fa fa-google-plus",
-				linkedin: "fa fa-linkedin"
-			}
-		}
-	},
-	template:`
-		<div class="social-links">
-			<a
-				v-for="social in Object.keys(links)" 
-				:href="links[social]" 
-				:class="social+' m-1'"
-			>
-				<i :class="icons[social]"></i>
-			</a>
-		</div>
-	`
-})
-
