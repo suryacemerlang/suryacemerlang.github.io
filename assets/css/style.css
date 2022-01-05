@@ -8,6 +8,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'customF';
+  src: url('./Nature-Green.woff2');
+}
+
 *{
   --accent-color:#37D667;
 }
@@ -150,6 +155,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
+}
+
+#header-path{
+  opacity:  0;
+  transition: all 0.5s;
+}
+
+#header-path.path-fixed{
+  opacity: 1;
 }
 
 /*--------------------------------------------------------------
@@ -653,7 +667,7 @@ section {
 /* Facts Section
 --------------------------------*/
 #facts {
-  background: #f7f7f7;
+  /*background: #c0ffbe;*/
   padding: 80px 0 60px 0;
 }
 
@@ -1036,7 +1050,7 @@ section {
 /* Contact Section
 --------------------------------*/
 #contact {
-  background: #f7f7f7;
+  /* background: #f7f7f7; */
   padding: 80px 0 40px 0;
 }
 
@@ -1050,14 +1064,14 @@ section {
 }
 
 #contact .info i {
-  font-size: 32px;
-  color: var(--accent-color);
+  font-size: 28px;
+  /* color: white; */
   float: left;
 }
 
 #contact .info p {
   padding: 0 0 10px 50px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   line-height: 22px;
   font-size: 14px;
 }
@@ -1074,7 +1088,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #333;
-  color: #fff;
+  color: #32C15D;
   line-height: 1;
   padding: 8px 0;
   border-radius: 50%;
@@ -1183,10 +1197,14 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #343b40;
+  /* background: #343b40; */
   padding: 30px 0;
   color: #fff;
   font-size: 14px;
+}
+
+#footer-info h3::before{
+  content: "#"
 }
 
 #footer .copyright {
