@@ -436,3 +436,4 @@ Vue.component("footer-component", {
 	`
 })
 
+ 
