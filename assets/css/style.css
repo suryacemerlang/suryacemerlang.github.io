@@ -1036,7 +1036,7 @@ section {
 /* Contact Section
 --------------------------------*/
 #contact {
-  background: #f7f7f7;
+  /*background: #f7f7f7;*/
   padding: 80px 0 40px 0;
 }
 
@@ -1051,7 +1051,7 @@ section {
 
 #contact .info i {
   font-size: 32px;
-  color: var(--accent-color);
+  color: #333333;
   float: left;
 }
 
@@ -1074,7 +1074,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #333;
-  color: #fff;
+  color: var(--accent-color);
   line-height: 1;
   padding: 8px 0;
   border-radius: 50%;
@@ -1183,7 +1183,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #343b40;
+  /*background: #343b40;*/
   padding: 30px 0;
   color: #fff;
   font-size: 14px;
@@ -1198,4 +1198,8 @@ section {
   text-align: center;
   font-size: 13px;
   color: #ccc;
+}
+
+.info h3:before{
+  content: "#";
 }
