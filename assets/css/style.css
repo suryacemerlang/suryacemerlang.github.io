@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 *{
-  --accent-color:#37D667;
+  --accent-color:#338275;
 }
 
 body {
@@ -23,7 +23,7 @@ a {
 }
 
 a:hover, a:active, a:focus {
-  color: #2dca98;
+  color: #1B515E;
   outline: none;
   text-decoration: none;
 }
